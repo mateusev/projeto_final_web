@@ -2,15 +2,34 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Início | Aprimore</title>
+    <title>Início</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Lato', Arial, sans-serif;
+            font-family: 'Tenor Sans', sans-serif;
             background: #fff;
         }
+        .navbar {
+            padding-top: 2rem;
+            background: none;
+        }
+        .navbar-brand {
+            letter-spacing: 0.15em;
+            color: #4285f4 !important;
+            font-weight: 500;
+        }
+        .nav-link {
+            color: #4285f4 !important;
+            letter-spacing: 0.12em;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
         .container-inicio {
             display: flex;
             align-items: center;
@@ -21,7 +40,6 @@
         .logo-inicio {
             width: 380px;
             height: 380px;
-            background: #4285f4;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -53,16 +71,25 @@
             font-size: 1.1rem;
             margin-bottom: 30px;
             text-align: left;
+            font-family: 'Assistant', sans-serif;
         }
         .btn-conheca {
             background: #4285f4;
             color: #fff;
             border-radius: 30px;
-            font-weight: 600;
+            font-weight: 500;
             letter-spacing: 0.08em;
             padding: 10px 40px;
             border: none;
             margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Assistant', sans-serif;
+            transition-duration: 0.4s;
+        }
+        .btn-conheca:hover {
+            background-color: #eae6e2 !important;
+            color: black !important;
         }
         @media (max-width: 900px) {
             .container-inicio {
@@ -86,16 +113,38 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">APRIMORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">INÍCIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rodas.html">RODAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tela_palestras.html">PALESTRAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tela_contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container container-inicio">
         <div class="logo-inicio">
-            <!-- Substitua pelo seu logo real se desejar -->
-            <img src="https://i.imgur.com/2yaf2wb.png" alt="Logo Aprimore">
+            <img src="/images/logo.jpeg" alt="Logo Aprimore">
         </div>
         <div class="apresentacao">
             <h1 class="titulo-aprimore">APRIMORE</h1>
             <div class="texto-apresentacao">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta laoreet enim, sit amet cursus neque vulputate ac. Fusce sem ante, mollis vitae mollis eu, cursus at elit. Integer lobortis et diam a sodales. Quisque semper purus leo, sed convallis turpis mollis quis.
             </div>
-            <a href="tela4.html" class="btn btn-conheca">CONHECA</a>
+            <a href="sobre.html" class="btn-conheca">CONHEÇA</a>
         </div>
     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
